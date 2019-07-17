@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/heinlinaung/wuxiaworld-crawler#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "js-crawler": "^0.3.21"
   }
 }
