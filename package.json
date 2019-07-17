@@ -1,0 +1,20 @@
+{
+  "name": "wuxiaworld-crawler",
+  "version": "1.0.0",
+  "description": "Just a crawler to download the contents of WuxiaWorld",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinlinaung/wuxiaworld-crawler.git"
+  },
+  "keywords": [],
+  "author": "Hein Lin Aung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heinlinaung/wuxiaworld-crawler/issues"
+  },
+  "homepage": "https://github.com/heinlinaung/wuxiaworld-crawler#readme"
+}
