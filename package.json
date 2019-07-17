@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/heinlinaung/wuxiaworld-crawler/issues"
   },
-  "homepage": "https://github.com/heinlinaung/wuxiaworld-crawler#readme"
+  "homepage": "https://github.com/heinlinaung/wuxiaworld-crawler#readme",
+  "dependencies": {
+    "js-crawler": "^0.3.21"
+  }
 }
