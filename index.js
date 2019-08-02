@@ -7,8 +7,8 @@ prefix_url : "https://www.wuxiaworld.com",
 type : "novel",
 novelName : "renegade-immortal",
 chapter_prefix : "rge-chapter-",
-startPage: 1200,
-endPage: 1210
+startPage: 1401,
+endPage: 1600
 }
 
 var CONTENT='';
@@ -37,6 +37,7 @@ function krawl(urllll){
 	 		},
 	  		failure: function(page) {
 	  			console.log('Failed -> reKrawl');
+	  			console.log('Failed URL -> '+urllll);
 	    		return krawl(urllll);
 	  		}
 		});
@@ -52,9 +53,18 @@ console.log("chaptersArr => "+chaptersArr);
 const start = async () => {
   await asyncForEach(chaptersArr, async (num) => {
     // await waitFor(5000);
-    let url = config.prefix_url + '/' + config.type + '/' + config.novelName + '/' + config.chapter_prefix + num; 
+    let url;
+    console.log('num -> ' + num)
+    if(num==1455){
+	let gg = 2;
+        for(var i=0; i< gg; i++){
+    	   url = config.prefix_url + '/' + config.type + '/' + config.novelName + '/' + config.chapter_prefix + num +'-'+(i+1); 
+	   await krawl(url);
+	}		
+    }else{
+    	url = config.prefix_url + '/' + config.type + '/' + config.novelName + '/' + config.chapter_prefix + num; 
 	await krawl(url);
-	// console.log(num);
+    }
   });
   console.log('Done');
 }
